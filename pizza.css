@@ -1,0 +1,157 @@
+body
+{
+	margin:0px;
+	background-image:url(fond.png);
+	overflow:hidden;
+
+}
+.TOP
+{	
+	
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15%;
+}
+h1
+{
+	padding-top: 1	%;
+	padding-right: 50%;
+	padding-left: 45%;
+	margin-right: auto;
+	margin-left: auto;
+	color:white;
+}
+.container
+{
+	padding-right: 15%;
+	padding-left: 27%;
+	padding-bottom: 2%;
+	padding-top: 3%;
+}
+a:link
+{
+	text-decoration:none;
+
+}
+.btn-group a
+{
+	background-color: black; 
+	color: white; /* White text */
+	padding: 10px 100px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: center; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after 
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.btn-group a:not(:last-child) 
+{
+	border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group a:hover 
+{
+	background-color: red;
+}
+
+.descs
+{
+	width: auto;
+	opacity: 0.8;
+	border: 1% solid #A0A0A0; 
+	text-align: center;
+	background: black;
+	margin-top:4%;
+	margin-right: 23%;
+	margin-left: 25%;
+	padding: 2%;
+	color: white;
+	font-size: 25px;
+}
+.payment
+{
+	text-align: center;
+	background-color: black; 
+	color: white;
+	padding:2%;
+	font-size: 25px;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+.descpizza
+{
+	width: auto;
+	opacity: 0.8;
+	text-align: center;
+	background: black;
+	margin-top:2%;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding-bottom: 27%;
+	padding-left:1%;
+	padding-right:2%;
+	color: red;
+	font-size: 25px;
+}
+div.gallery
+{
+	margin: 3%;
+	margin-top: 2%;
+	/*border: 1px solid #ccc;*/
+	float: left;
+	width: 10%;
+}
+
+div.gallery:hover 
+{
+	width: 9.9%;
+}
+
+
+div.gallery img 
+{
+	width: 125%;
+	height: auto;
+}
+
+div.desc
+{
+
+	padding-left: 25%;
+	text-align: center;
+	color: white;
+}
+.prix
+{
+	color: white; 
+	font-size: 180%;	
+	margin-right: 18%;
+	float: left;
+}
+.container2
+{
+	padding-right: 15%;
+	padding-left: 27%;
+	padding-bottom: 2%;
+	padding-top: 3%;
+
+}
+.btn-group-bot a
+{
+	background-color: black; 
+	color: red; /* White text */
+	cursor: pointer; /* Pointer/hand icon */
+	float: right; /* Float the buttons side by side */
+	padding-left: 5%;
+	padding-top: 10%
+	font-size: 100%;
+}

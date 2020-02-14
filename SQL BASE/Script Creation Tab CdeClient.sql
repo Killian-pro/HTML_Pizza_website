@@ -1,0 +1,30 @@
+USE [PIZZA]
+GO
+
+/****** Object:  Table [dbo].[CdeClient]    Script Date: 20/12/2018 11:23:23 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CdeClient](
+	[N°CdeClient] [int] NOT NULL,
+	[N°Client] [int] NOT NULL,
+	[Livre-Emporte] [bit] NOT NULL,
+	[Date Cde] [date] NOT NULL,
+ CONSTRAINT [PK_CdeClient] PRIMARY KEY CLUSTERED 
+(
+	[N°CdeClient] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[CdeClient]  WITH CHECK ADD  CONSTRAINT [FK_CdeClient_CLIENT1] FOREIGN KEY([N°Client])
+REFERENCES [dbo].[CLIENT] ([N°Client])
+GO
+
+ALTER TABLE [dbo].[CdeClient] CHECK CONSTRAINT [FK_CdeClient_CLIENT1]
+GO
+

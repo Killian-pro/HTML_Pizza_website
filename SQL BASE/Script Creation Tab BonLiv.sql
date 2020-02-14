@@ -1,0 +1,29 @@
+USE [PIZZA]
+GO
+
+/****** Object:  Table [dbo].[BonLiv]    Script Date: 20/12/2018 11:22:05 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[BonLiv](
+	[N°BonLiv] [int] NOT NULL,
+	[N°CdeClient] [int] NOT NULL,
+	[Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_BonLiv] PRIMARY KEY CLUSTERED 
+(
+	[N°BonLiv] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[BonLiv]  WITH CHECK ADD  CONSTRAINT [FK_BonLiv_CdeClient1] FOREIGN KEY([N°CdeClient])
+REFERENCES [dbo].[CdeClient] ([N°CdeClient])
+GO
+
+ALTER TABLE [dbo].[BonLiv] CHECK CONSTRAINT [FK_BonLiv_CdeClient1]
+GO
+
